@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>15 Minute City Urban Design Competition</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Discussions Homepage</title>
+</head>
+
+<body>
+    <header>
+
+        <!--Main website links-->
+        <nav>
+            <!--Hamburger menu in small screen-->
+            <div class="title-bar" data-responsive-toggle="navbar" data-hide-for="medium">
+                <div class="title-bar-title">Menu</div>
+                <button class="menu-icon" type="button" data-toggle="navbar"></button>
+            </div>
+
+
+            <!--Links need to be added-->
+            <div class="top-bar" id="navbar">
+                <div class="top-bar-left">
+                    <a href="index.html">Charette</a>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="dropdown menu align-right" data-dropdown-menu>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Competitions</a></li>
+                        <li><a href="#">Results</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Competition Specific Links-->
+        <nav class="scrollmenu">
+            <ul>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Submissions</a></li>
+                <li><a href="#">Jury</a></li>
+                <li><a href="#">Key Dates</a></li>
+                <li><a href="discussion-homepage.html">Discussions</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="#">Past Results</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="grid-container grid-x grid-padding-x">
+        <main class="cell large-8 medium-12 small-12">
+            <h1>Discussions</h1>
+
+            <section class="cell large-8 medium-12 small-12">
+
+
+                <!--This part contains the search section on discussions page-->
+                <!--This part contains the form which will be connected to the database -->
+                <form class="grid-x grid-margin-x" action="/search" method="get">
+                    <input class="searchbar cell large-10 medium-10 small-10" type="text" name="query"
+                        placeholder="Search...">
+                    <button class="button secondary large-2 medium-2 small-2">
+                        <img src="img/icons8-search.svg" width="16px" height="16px">
+                    </button>
+                </form>
+
+                <!--This part takes the user to create a new discussion post page-->
+                <div class="cell large-8">
+                    <a href="create-post.html" class="button">Start New Discussion</a>
+                </div>
+
+            </section>
+
+
+            <!--This part shows a preview of the existing discussions-->
+            <section>
+                <article class="cell large-8 medium-12 small-12">
+                    <h2><a href="thread.html">Discussion Title 1</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue ante vel interdum
+                        semper.
+                        Suspendisse non purus sem. Donec leo ipsum, laoreet eu scelerisque eget, luctus in risus.
+                        Integer
+                        eget enim nunc.
+                    </p>
+                    <section class="card-info">
+                        <p>12 Replies</p>
+                        <p>15 Likes</p>
+                        <time datetime="2023-05-16 08:45">May 16, 2023 08:45</time>
+                    </section>
+                </article>
+
+                <article>
+                    <h2><a href="thread.html">Discussion Title 2</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue ante vel interdum
+                        semper.
+                        Suspendisse non purus sem. Donec leo ipsum, laoreet eu scelerisque eget, luctus in risus.
+                        Integer
+                        eget enim nunc.
+                    </p>
+                    <section class="card-info">
+                        <p>12 Replies</p>
+                        <p>15 Likes</p>
+                        <time datetime="2023-05-16 08:45">May 16, 2023 08:45</time>
+                    </section>
+                </article>
+
+                <article>
+                    <h2><a href="thread.html">Discussion Title 3</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue ante vel interdum
+                        semper.
+                        Suspendisse non purus sem. Donec leo ipsum, laoreet eu scelerisque eget, luctus in risus.
+                        Integer
+                        eget enim nunc.
+                    </p>
+                    <section class="card-info">
+                        <p>12 Replies</p>
+                        <p>15 Likes</p>
+                        <time datetime="2023-05-16 08:45">May 16, 2023 08:45</time>
+                    </section>
+                </article>
+
+                <article>
+                    <h2><a href="thread.html">Discussion Title 4</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue ante vel interdum
+                        semper.
+                        Suspendisse non purus sem. Donec leo ipsum, laoreet eu scelerisque eget, luctus in risus.
+                        Integer
+                        eget enim nunc.
+                    </p>
+                    <section class="card-info">
+                        <p>12 Replies</p>
+                        <p>15 Likes</p>
+                        <time datetime="2023-05-16 08:45">May 16, 2023 08:45</time>
+                    </section>
+                </article>
+
+            </section>
+        </main>
+
+        <aside class="aside cell large-4">
+            <article>
+                <h5>Charette Social Media</h5>
+                <!-- Social media posts go here -->
+                <section class="post">
+                    <img src="img/placeholder-image.jpg" alt="Post 1">
+                    <p>12 Replies 15 Likes</p>
+                    <p>El chair - Top 30 - Starchitect Chair Design Competition
+                        #ArchitectureCompetitions Organized by Charette
+                        #competitions #charette
+                    </p>
+
+                </section>
+
+                <section class="post">
+                    <img src="img/placeholder-image.jpg" alt="Post 2">
+                    <p>12 Replies 15 Likes</p>
+                    <p>El chair - Top 30 - Starchitect Chair Design Competition
+                        #ArchitectureCompetitions Organized by Charette
+                        #competitions #charette
+                    </p>
+
+
+                </section>
+
+            </article>
+        </aside>
+    </div>
+
+    <!--Start of Footer-->
+    <div class="grid-container grid-x footer grid-margin-x"></div>
+    <footer>
+        <section class="cell footer1 small-12 medium-12 large-12 ">
+
+            <h4>Charette</h4>
+
+            <ul>
+                <li><a href="#"></a><span class="material-symbols-outlined">deployed_code</span></li>
+                <li><a href="#"></a><span class="material-symbols-outlined">deployed_code</span></li>
+                <li><a href="#"></a><span class="material-symbols-outlined">deployed_code</span></li>
+                <li><a href="#"></a><span class="material-symbols-outlined">deployed_code</span></li>
+            </ul>
+        </section>
+
+        <section class="cell footer2 small-12 medium-12 large-12 ">
+
+            <h5>Flex your design muscle with the best international architecture competitions.</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a> </li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </section>
+
+
+    </footer>
+    </div>
+    <!-- End of Footer-->
+
+    <!--Javascript links to zurb foundation files-->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

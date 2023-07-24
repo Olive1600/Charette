@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Competiton Specific Navbar */
+
+nav.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+nav.scrollmenu li {
+    display: inline;
+}
+
+nav.scrollmenu a {
+    display: inline-block;
+    overflow: auto;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+nav.scrollmenu::-webkit-scrollbar {
+    display: none;
+}
+
+nav.scrollmenu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/*General tags */
+
+main h1 {
+    color: rgb(185, 167, 167);
+
+}
+
+.input-text {
+    border-radius: 18px;
+}
+
+.butt-main {
+    color: white;
+    background-color: grey;
+}
+
+.butt-second {
+    color: black;
+    background-color: white;
+}
+
+.butt {
+    padding: 20px;
+    margin: 0% 5% 0% 5%;
+    width: 200px;
+    height: 60px;
+    left: 280px;
+    top: 889px;
+    border-radius: 30px;
+}
+
+input.butt {
+    margin: 2% 2%;
+    max-height: 60px;
+    min-height: 60px;
+    padding: 0;
+}
+
+/*Login Page AS*/
+
+.float-center {
+    text-align: center;
+}
+
+section.reg-cta {
+    margin: 35px 0px 50px 0;
+    padding: 1%;
+}
+
+#login-title {
+    text-align: center;
+}
+
+/*Publish Post Form AS*/
+
+form>textarea {
+    border-radius: 18px;
+}
+
+div.form-buttons {
+    text-align: center;
+
+}
+
+/* Search bar tools */
+.search-section {
+    margin: 1%;
+}
+
+article {
+    background-color: #F4F4F4;
+    margin: 10px 0;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+.search-bar-tools {
+    /* background-color: antiquewhite;
+    border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Preview cards */
+.preview-card {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.preview-card p {
+    margin-right: 2%;
+}
+
+.card-info p {
+    display: inline;
+    margin: 1% 2% 1% 0%;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Search-Bar_GC */
+.searchbar {
+    border-radius: 8px;
+    height: 40px;
+}
+
+/* Button_GC */
+.button {
+    border-radius: 8px;
+    height: auto;
+    width: auto;
+}
+
+/* Aside Social_GC */
+aside article {
+    padding: 16px;
+}
+
+/* h3_GC */
+h2 {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+/* h3_GC */
+h3 {
+    font-size: x-large;
+    font-weight: 300;
+}
+
+/* h5_GC */
+h5 {
+    font-size: medium;
+    font-weight: 200;
+}
+
+/* img_GC */
+aside img {
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Thread code prasanna */
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.indent {
+    margin-left: 3.5%;
+    /* Adjust the value as needed */
+    margin-right: 0%;
+    min-width: 95%;
+}
+
+.reply-card {
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+
+.button-container {
+    display: flex;
+}
+
+.like-button,
+.reply-button {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.like-button:hover .material-symbols-outlined,
+.reply-button:hover .material-symbols-outlined {
+    color: blue;
+}
+
+.like-button span,
+.reply-button span {
+    color: black;
+}
+
+.material-symbols-outlined {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.disclosure-button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.disclosure-button:hover {
+    background-color: #ebebeb;
+}
+
+/* Footer styling starts here */
+.footer1 {
+    background-color: #CECECE;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2%;
+
+}
+
+.footer1 li {
+    display: inline;
+    justify-content: space-between;
+
+}
+
+.footer2 {
+    background-color: #CECECE;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2%;
+}
+
+.footer2 h3 {
+    max-width: 40%;
+    font-size: large;
+}
+
+.footer2 li {
+    display: block;
+    margin: 1% 2%;
+
+
+}
+
+@media (max-width: 600px) {
+
+    #char-home {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    div.form-buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    div.form-buttons>.butt {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    input.butt {
+        margin: 1%;
+        max-height: 40px;
+        min-height: 40px;
+        padding: 0;
+    }
+
+
+}
+
+@media (min-width: 600px) and (max-width: 1020px) {
+
+    #char-home-a {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    input.butt {
+        margin: 2% 2%;
+        max-height: 40px;
+        min-height: 40px;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    div.form-buttons {
+        text-align: left;
+    }
+
+
+}
