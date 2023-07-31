@@ -1,20 +1,33 @@
+/*Edited_GC*/
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*Competiton Specific Navbar */
 
-nav.scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
+.top-bar,
+.top-bar ul {
+    background-color: #ffffff;
 }
 
-nav.scrollmenu li {
+ul {
+    margin-bottom: 0%;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    border-bottom: 1px solid #E4E4E4;
+    box-shadow: #ccc;
+}
+
+div.scrollmenu li {
     display: inline;
 }
 
-nav.scrollmenu a {
+div.scrollmenu a {
     display: inline-block;
     overflow: auto;
     color: black;
@@ -23,13 +36,19 @@ nav.scrollmenu a {
     text-decoration: none;
 }
 
-nav.scrollmenu::-webkit-scrollbar {
+div.scrollmenu::-webkit-scrollbar {
     display: none;
 }
 
-nav.scrollmenu {
+div.scrollmenu {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+nav div ul li a:active {
+    text-decoration: underline;
+    text-decoration-color: #ffc40c;
+    text-decoration-thickness: 2px;
 }
 
 /*General tags */
@@ -98,14 +117,15 @@ div.form-buttons {
 
 /* Search bar tools */
 .search-section {
-    margin: 1%;
+    margin: 2%;
+    padding: 2%;
 }
 
 article {
     background-color: #F4F4F4;
-    margin: 10px 0;
-    padding: 2%;
-    border-radius: 8px;
+    margin: 16px 0;
+    padding: 4%;
+    border-radius: 16px;
 }
 
 .search-bar-tools {
@@ -134,7 +154,6 @@ article {
 .card-info p {
     display: inline;
     margin: 1% 2% 1% 0%;
-
 }
 
 a {
@@ -142,46 +161,70 @@ a {
     color: black;
 }
 
+section div p a {
+    margin: 24px 0;
+    display: flex;
+    justify-content: right;
+}
+
 /* Search-Bar_GC */
 .searchbar {
-    border-radius: 8px;
+    border-radius: 64px;
     height: 40px;
+    padding: 2%;
 }
 
 /* Button_GC */
 .button {
-    border-radius: 8px;
-    height: auto;
-    width: auto;
+    border-radius: 128px;
+    height: 40px;
+    width: 40px;
+    color: #F4F4F4;
+    background-color: #EDEDED;
 }
 
-/* Aside Social_GC */
-aside article {
-    padding: 16px;
+/* headings_GC */
+h1 {
+    color: #222222;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 16px 0;
 }
 
-/* h3_GC */
+
 h2 {
-    font-size: x-large;
-    font-weight: 500;
+    margin: 16px 0;
+    font-weight: 600;
+    color: #222222;
+    font-size: 24px;
 }
 
-/* h3_GC */
+article h2 {
+    font-weight: 600;
+    color: #222222;
+    font-size: 24px;
+}
+
 h3 {
-    font-size: x-large;
     font-weight: 300;
+    color: #222222;
 }
 
-/* h5_GC */
+
 h5 {
     font-size: medium;
     font-weight: 200;
 }
 
-/* img_GC */
-aside img {
-    padding-bottom: 10px;
-    border-radius: 8px;
+p {
+    color: #444444;
+    font-size: 16px;
+}
+
+button img {
+    width: 16px;
+    height: 16px;
+    align: center;
 }
 
 /* Thread code prasanna */
@@ -205,9 +248,7 @@ aside img {
 .reply-card {
     max-width: 100%;
     overflow: hidden;
-
 }
-
 
 .button-container {
     display: flex;
@@ -255,43 +296,72 @@ aside img {
     background-color: #ebebeb;
 }
 
-/* Footer styling starts here */
+/* Edited*/
+/*Footer styling starts here */
+
 .footer1 {
-    background-color: #CECECE;
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 2%;
-
+    padding: 2% 6% 2% 4%;
+    color: #ffffff;
 }
 
 .footer1 li {
     display: inline;
     justify-content: space-between;
+    color: #ffffff;
 
 }
 
 .footer2 {
-    background-color: #CECECE;
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 2%;
+    padding: 2% 4%;
 }
 
-.footer2 h3 {
+.footer2 h5 {
     max-width: 40%;
-    font-size: large;
+    color: #ffffff;
 }
 
 .footer2 li {
     display: block;
     margin: 1% 2%;
-
-
+    color: #ffffff;
 }
+
+.footer2 a {
+    display: block;
+    margin: 1% 2%;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* Aside Social_GC */
+
+aside article {
+    margin: 64px 0 16px;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+aside article div {
+    display: flex;
+    justify-content: space-between;
+}
+
+article section img {
+    margin: 16px 0;
+    border-radius: 16px;
+}
+
+/* aside-ends-here_GC*/
 
 @media (max-width: 600px) {
 
@@ -320,7 +390,6 @@ aside img {
         min-height: 40px;
         padding: 0;
     }
-
 
 }
 
