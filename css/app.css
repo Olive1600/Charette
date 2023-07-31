@@ -54,7 +54,7 @@ nav div ul li a:active {
 /*General tags */
 
 main h1 {
-    color: rgb(185, 167, 167);
+    color: #222222;
 
 }
 
@@ -63,8 +63,8 @@ main h1 {
 }
 
 .butt-main {
-    color: white;
-    background-color: grey;
+    color: #222222;
+    background-color: #FFC40C;
 }
 
 .butt-second {
