@@ -11,6 +11,9 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="discussionHomepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Discussions Homepage</title>
 </head>
 
@@ -29,41 +32,39 @@
             <!--Links need to be added-->
             <div class="top-bar" id="navbar">
                 <div class="top-bar-left">
-                    <a href="index.html">Charette</a>
+                    <a href="index.html"><img src="img/Charette Logo.svg" width="120px"></a>
                 </div>
                 <div class="top-bar-right">
                     <ul class="dropdown menu align-right" data-dropdown-menu>
-                        <li><a href="#">Home</a></li>
                         <li><a href="#">Competitions</a></li>
                         <li><a href="#">Results</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
-
-        <!--Competition Specific Links-->
-        <nav class="scrollmenu">
-            <ul>
-                <li><a href="#">Awards</a></li>
-                <li><a href="#">Submissions</a></li>
-                <li><a href="#">Jury</a></li>
-                <li><a href="#">Key Dates</a></li>
-                <li><a href="discussionHomepage.html">Discussions</a></li>
-                <li><a href="Discussions+FAQ.html">FAQ</a></li>
-                <li><a href="#">Past Results</a></li>
-            </ul>
+            <!--Competition Specific Links-->
+            <div class="scrollmenu">
+                <ul>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Submissions</a></li>
+                    <li><a href="#">Jury</a></li>
+                    <li><a href="#">Key Dates</a></li>
+                    <li><a href="discussion-homepage.html">Discussions</a></li>
+                    <li><a href="faqs.html">FAQ</a></li>
+                    <li><a href="#">Past Results</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div class="grid-container grid-x grid-padding-x">
             <section class="cell large-8 medium-12 small-12">
-                <h1>Discussions</h1>
+                <h1>15 Minute City - Discussions</h1>
 
                 <!--This part contains the search section on discussions page-->
                 <!--This part contains the form which will be connected to the database -->
                 <form class="grid-x grid-margin-x" action="/search" method="get">
                     <input class="searchbar cell large-10 medium-10 small-10" type="text" name="query"
                         placeholder="Search">
-                    <button class="button secondary large-2 medium-2 small-2">
+                    <button class="button secondary large-2 medium-2 small-2" onclick="openModal()">
                         <img src="img/icons8-search.svg" width="16px" height="16px">
                     </button>
                 </form>
@@ -87,128 +88,192 @@
     <div class="grid-container grid-x grid-padding-x">
         <main class="cell large-8 medium-12 small-12">
 
-
             <!--This part shows a preview of the existing discussions-->
             <section>
-                <article class="cell large-8 medium-12 small-12">
-                    <h3><a href="Thread.html">Discussion Title 1</a></h3>
-                    <button id="btnTopic1" class="toggle" onclick="revealTopic('btnTopic1', 'txtTopic1');">Read
-                        More
-                    </button>
-                    <section id="txtTopic1" class="content">
-                        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue
-                            ante
-                            vel interdum
-                            semper.
-                            Suspendisse non purus sem. Donec leo ipsum, laoreet eu scelerisque eget, luctus in risus.
-                            Integer
-                            eget enim nunc.
-                        </p>
-                        <section class="card-info">
-                            <p>12 Replies</p>
-                            <p>15 Likes</p>
-                            <time datetime="2023-05-16 08:45">May 16, 2023 08:45</time>
+                <div>
+                    <h2>Your Activity</h2>
+                    <article class="cell large-8 medium-12 small-12">
+                        <h2><a href="thread.html">How big a city module do I need to plan/design?</a></h2>
+                        <button id="btnTopic1" class="toggle" onclick="revealTopic('btnTopic1', 'txtTopic1');">Read
+                            More
+                        </button>
+                        <section id="txtTopic1" class="content">
+                            <p class="readmore">We recommend picking a size that helps you depict your concepts and idea
+                                well for a “15-minute city”. Remember, you don’t need to design an entire city – just a
+                                module that can be replicated to create a larger city.
+                            </p>
+                            <section class="card-info">
+                                <p>12 Replies</p>
+                                <p>15 Likes</p>
+                                <p><time datetime="2023-05-16 08:45">July 21, 2023 03:45</time></p>
+                            </section>
                         </section>
-                    </section>
-                </article>
+                    </article>
 
-                <article>
-                    <h3><a href="Thread.html">Discussion Title 2</a></h3>
-                    <button id="btnTopic2" class="toggle" onclick="revealTopic('btnTopic2', 'txtTopic2');">Read
-                        More
-                    </button>
-                    <section id="txtTopic2" class="content">
-                        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue
-                            ante
-                            vel interdum
-                            semper.
-                            Suspendisse non purus sem. Donec leo ipsum, laoreet eu scelerisque eget, luctus in risus.
-                            Integer
-                            eget enim nunc.
-                        </p>
-                        <section class="card-info">
-                            <p>12 Replies</p>
-                            <p>15 Likes</p>
-                            <time datetime="2023-05-16 08:45">May 16, 2023 08:45</time>
+                    <article>
+                        <h2><a href="thread.html">Do I need to design a new city or can I re-design an existing city as
+                                well?</a></h2>
+                        <button id="btnTopic2" class="toggle" onclick="revealTopic('btnTopic2', 'txtTopic2');">Read
+                            More
+                        </button>
+                        <section id="txtTopic2" class="content">
+                            <p class="readmore">You are free to depict either – new designs, as well as re-design of
+                                existing cities.
+                            </p>
+                            <section class="card-info">
+                                <p>12 Replies</p>
+                                <p>15 Likes</p>
+                                <p><time datetime="2023-05-16 08:45">June 10, 2023 09:20</time></p>
+                            </section>
                         </section>
-                    </section>
-                </article>
-
-                <article>
-                    <h3><a href="Thread.html">Discussion Title 3</a></h3>
-                    <button id="btnTopic3" class="toggle" onclick="revealTopic('btnTopic3', 'txtTopic3');">Read
-                        More
-                    </button>
-                    <section id="txtTopic3" class="content">
-                        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue
-                            ante
-                            vel interdum
-                            semper.
-                            Suspendisse non purus sem. Donec leo ipsum, laoreet eu scelerisque eget, luctus in risus.
-                            Integer
-                            eget enim nunc.
-                        </p>
-                        <section class="card-info">
-                            <p>12 Replies</p>
-                            <p>15 Likes</p>
-                            <time datetime="2023-05-16 08:45">May 16, 2023 08:45</time>
+                    </article>
+                    <p><a href="#">View More</a></p>
+                </div>
+                <div>
+                    <h2>Trending Discussions</h2>
+                    <article>
+                        <h2><a href="thread.html">Where can I find my Registration ID?</a></h2>
+                        <button id="btnTopic3" class="toggle" onclick="revealTopic('btnTopic3', 'txtTopic3');">Read
+                            More
+                        </button>
+                        <section id="txtTopic3" class="content">
+                            <img src="img/Regn ID.png" alt="Registration ID">
+                            <p class="readmore">Your Registration ID is the order number that appears after completing
+                                the
+                                registration process. It can also be found in the confirmation e-mail that you’ll
+                                receive
+                                upon successful registration. The confirmation is only sent to the email provided during
+                                the
+                                checkout.
+                            </p>
+                            <section class="card-info">
+                                <p>12 Replies</p>
+                                <p>15 Likes</p>
+                                <p><time datetime="2023-05-16 08:45">May 16, 2023 08:45</time></p>
+                            </section>
                         </section>
-                    </section>
-                </article>
-
-                <article>
-                    <h3><a href="Thread.html">Discussion Title 4</a></h3>
-                    <button id="btnTopic4" class="toggle" onclick="revealTopic('btnTopic4', 'txtTopic4');">Read
-                        More
-                    </button>
-                    <section id="txtTopic4" class="content">
-                        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue
-                            ante
-                            vel interdum
-                            semper.
-                            Suspendisse non purus sem. Donec leo ipsum, laoreet eu scelerisque eget, luctus in risus.
-                            Integer
-                            eget enim nunc.
-                        </p>
-                        <section class="card-info">
-                            <p>12 Replies</p>
-                            <p>15 Likes</p>
-                            <time datetime="2023-05-16 08:45">May 16, 2023 08:45</time>
+                    </article>
+                    <article>
+                        <h2><a href="thread.html">How will my entry be judged?</a></h2>
+                        <button id="btnTopic4" class="toggle" onclick="revealTopic('btnTopic4', 'txtTopic4');">Read
+                            More
+                        </button>
+                        <section id="txtTopic4" class="content">
+                            <p class="readmore">Submissions will be judged digitally on a computer screen. The jury is
+                                going
+                                to consider the following criteria – innovation, practicality, aesthetics, impact and
+                                presentation.
+                            </p>
+                            <section class="card-info">
+                                <p>12 Replies</p>
+                                <p>15 Likes</p>
+                                <p><time datetime="2023-05-16 08:45">May 16, 2023 08:45</time></p>
+                            </section>
                         </section>
-                    </section>
-                </article>
+                    </article>
 
+                    <article>
+                        <h2><a href="thread.html">Is it possible to receive the judges rating and/or comments for my
+                                entry?</a></h2>
+                        <button id="btnTopic5" class="toggle" onclick="revealTopic('btnTopic5', 'txtTopic5');">Read
+                            More
+                        </button>
+                        <section id="txtTopic5" class="content">
+                            <p class="readmore">Unfortunately due to the high volume of entries, theCharette cannot
+                                offer
+                                individual comments to its entrants.
+                            </p>
+                            <section class="card-info">
+                                <p>12 Replies</p>
+                                <p>15 Likes</p>
+                                <p><time datetime="2023-05-16 08:45">May 16, 2023 08:45</time></p>
+                            </section>
+                        </section>
+                    </article>
+                    <p><a href="#">View More</a></p>
+                </div>
             </section>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <form id="createPostForm" class="grid-x grid-margin-x">
+                        <h2>Start New Discussion</h2>
+                        <h4>What is your post about?</h4>
+                        <input class="cell large-10 medium-10 small-10" type="text" name="post_title"
+                            placeholder="Title" required>
+
+                        <h4>What is your question?</h4>
+                        <textarea form="createPostForm" class="cell large-10 medium-10 small-10" name="post_details"
+                            rows="8" placeholder="Enter your discussion details" required></textarea>
+
+                        <div class="form-buttons">
+                            <input class="butt butt-second" type="button" value="Cancel" height="20"
+                                onclick="closeModal()">
+                            <input class="butt butt-main" type="submit" value="Publish">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal Ends-->
         </main>
 
+        <!--Start of Aside Section-->
+        <!-- Social media posts go here -->
         <aside class="aside cell large-4">
             <article>
-                <h5>Charette Social Media</h5>
-                <!-- Social media posts go here -->
+                <div>
+                    <img src="img/Charette Logo.svg" alt="Charette Icon" width="120px" height="auto">
+                    <img src="img/Instagram Icon.png" alt="Instagram Icon" width="30px" height="30px">
+                </div>
                 <section class="post">
-                    <img src="img/placeholder-image.jpg" alt="Post 1">
+                    <img src="img/15MC-10382.pdf_1.jpg" alt="Post 1">
                     <p>12 Replies 15 Likes</p>
-                    <p>El chair - Top 30 - Starchitect Chair Design Competition
-                        #ArchitectureCompetitions Organized by Charette
-                        #competitions #charette
-                    </p>
-
+                    <p>El chair - Top 30 - Starchitect Chair Design Competition</p>
+                    <p>#ArchitectureCompetitions #15MinuteCity #competitions #charette</p>
                 </section>
-
+            </article>
+            <article>
+                <div>
+                    <img src="img/Charette Logo.svg" alt="Charette Icon" width="120px" height="auto">
+                    <img src="img/Instagram Icon.png" alt="Instagram Icon" width="30px" height="30px">
+                </div>
                 <section class="post">
-                    <img src="img/placeholder-image.jpg" alt="Post 2">
+                    <img src="img/15MC-10147.pdf_1.jpg" alt="Post 1">
                     <p>12 Replies 15 Likes</p>
-                    <p>El chair - Top 30 - Starchitect Chair Design Competition
-                        #ArchitectureCompetitions Organized by Charette
-                        #competitions #charette
-                    </p>
-
-
+                    <p>El chair - Top 30 - Starchitect Chair Design Competition</p>
+                    <p>#ArchitectureCompetitions #15MinuteCity #competitions #charette</p>
                 </section>
-
             </article>
         </aside>
     </div>
+
+
+
+    <!--Start of Footer-->
+    <div class="grid-container grid-x footer grid-margin-x"></div>
+    <footer>
+        <section class="cell footer1 small-12 medium-12 large-12 ">
+            <a href="index.html"><img src="img/Charette Footer.png" width="120px"></a>
+            <ul>
+                <li><a href="#"></a><img src="img/Instagram.png" height="20px" width="20px"></li>
+                <li><a href="#"></a><img src="img/pinterest-50.png" height="20px" width="20px"></li>
+                <li><a href="#"></a><img src="img/Facebook.png" height="20px" width="20px"></li>
+                <li><a href="#"></a><img src="img/linkedin-50.png" height="20px" width="20px"></li>
+            </ul>
+        </section>
+        <section class="cell footer2 small-12 medium-12 large-12 ">
+            <h5>Flex your design muscle with the best international architecture competitions.</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a> </li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </section>
+    </footer>
+    </div>
+    <!-- End of Footer-->
 
     <!--Javascript links to zurb foundation files-->
     <script src="js/vendor/jquery.js"></script>

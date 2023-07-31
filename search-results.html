@@ -27,69 +27,76 @@
       <!--Links need to be added-->
       <div class="top-bar" id="navbar">
         <div class="top-bar-left">
-          <a href="index.html" id="char-home">Charette</a>
+          <a href="index.html"><img src="img/Charette Logo.svg" width="120px"></a>
         </div>
         <div class="top-bar-right">
           <ul class="dropdown menu align-right" data-dropdown-menu>
-            <li><a href="#">Home</a></li>
             <li><a href="#">Competitions</a></li>
             <li><a href="#">Results</a></li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!--Competition Specific Links-->
-    <nav class="scrollmenu">
-      <ul>
-        <li><a href="#">Awards</a></li>
-        <li><a href="#">Submissions</a></li>
-        <li><a href="#">Jury</a></li>
-        <li><a href="#">Key Dates</a></li>
-        <li><a href="discussion-homepage.html">Discussions</a></li>
-        <li><a href="faqs.html">FAQ</a></li>
-        <li><a href="#">Past Results</a></li>
-      </ul>
+      <!--Competition Specific Links-->
+      <div class="scrollmenu">
+        <ul>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Submissions</a></li>
+          <li><a href="#">Jury</a></li>
+          <li><a href="#">Key Dates</a></li>
+          <li><a href="discussion-homepage.html">Discussions</a></li>
+          <li><a href="faqs.html">FAQ</a></li>
+          <li><a href="#">Past Results</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
+
   <!--Main Content-->
   <main class="grid-container fluid grid-margin-x">
     <section class="grid-x search-section small-12 medium-12 large-8 ">
       <!--Search Bar tools-->
       <div class="cell search-bar-tools">
         <div class="search-icon">
-          <span class="material-symbols-outlined"> chevron_left </span>
           <a href="discussion-homepage.html">
-            <h1>Search</h1>
-          </a>
+            <span class="material-symbols-outlined"> chevron_left </span></a>
         </div>
+        <form class="grid-x grid-margin-x" action="/search" method="get">
+          <input class="searchbar cell large-10 medium-10 small-10" type="text" name="query" placeholder="Search">
+          <button class="button secondary large-2 medium-2 small-2">
+            <img src="img/icons8-search.svg" width="16px" height="16px">
+          </button>
+        </form>
+
         <!--Start of Filter Modal-->
         <button class="button" data-open="filter-modal">
           <span class="material-symbols-outlined"> filter_alt </span>
         </button>
       </div>
+    </Section>
 
-      <div class="reveal" id="filter-modal" data-reveal>
-        <h3>Filters</h3>
-        <form action="#">
-          <section class="row">
-            <fieldset class="fieldset">
-              <!-- <legend>Check these out</legend> -->
-              <input id="checkbox12" type="checkbox" /><label for="checkbox12">FAQs</label>
-              <input id="checkbox22" type="checkbox" /><label for="checkbox22">Discussions</label>
-              <!-- <input type="submit" name="" id=""> -->
-            </fieldset>
-          </section>
-        </form>
+    <div class="reveal" id="filter-modal" data-reveal>
+      <h3>Filters</h3>
+      <form action="#">
+        <section class="row">
+          <fieldset class="fieldset">
+            <!-- <legend>Check these out</legend> -->
+            <input id="checkbox12" type="checkbox" /><label for="checkbox12">FAQs</label>
+            <input id="checkbox22" type="checkbox" /><label for="checkbox22">Discussions</label>
+            <!-- <input type="submit" name="" id=""> -->
+          </fieldset>
+        </section>
+      </form>
 
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <!--End of Filter Modal-->
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--End of Filter Modal-->
     </section>
 
     <!--Start of Preview Cards-->
-    <section class="grid-x">
+    <section id="preview-card-display" class="grid-x">
+
       <article class="cell preview-card large-8 medium-12 small-12">
         <a href="#">
           <h2>Preview Card</h2>
@@ -142,19 +149,15 @@
   <div class="grid-container grid-x footer grid-margin-x"></div>
   <footer>
     <section class="cell footer1 small-12 medium-12 large-12 ">
-
-      <h4>Charette</h4>
-
+      <a href="index.html"><img src="img/Charette Footer.png" width="200px"></a>
       <ul>
-        <li><a href="#"></a><span class="material-symbols-outlined">deployed_code</span></li>
-        <li><a href="#"></a><span class="material-symbols-outlined">deployed_code</span></li>
-        <li><a href="#"></a><span class="material-symbols-outlined">deployed_code</span></li>
-        <li><a href="#"></a><span class="material-symbols-outlined">deployed_code</span></li>
+        <li><a href="#"></a><img src="img/Instagram.png" height="20px" width="20px"></li>
+        <li><a href="#"></a><img src="img/pinterest-50.png" height="20px" width="20px"></li>
+        <li><a href="#"></a><img src="img/Facebook.png" height="20px" width="20px"></li>
+        <li><a href="#"></a><img src="img/linkedin-50.png" height="20px" width="20px"></li>
       </ul>
     </section>
-
     <section class="cell footer2 small-12 medium-12 large-12 ">
-
       <h5>Flex your design muscle with the best international architecture competitions.</h5>
       <ul>
         <li><a href="#">About Us</a></li>
@@ -162,8 +165,6 @@
         <li><a href="#">Privacy Policy</a></li>
       </ul>
     </section>
-
-
   </footer>
   </div>
   <!-- End of Footer-->
